@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners
+        android:bottomLeftRadius="@dimen/update_dialog_radius"
+        android:bottomRightRadius="@dimen/update_dialog_radius"
+        android:topLeftRadius="@dimen/mul_size_zero"
+        android:topRightRadius="@dimen/mul_size_zero" />
+
+    <solid android:color="@color/colorWhite" />
+</shape>

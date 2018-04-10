@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/update_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        android:src="@drawable/update_img_top" />
+
+    <TextView
+        android:id="@+id/tvUpdateDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="1、哈哈哈哈哈哈哈哈哈哈哈哈哈哈\n2、weqweqweqweqwewqe\n3、啦啦啦啦啦啦啦啦啦啦"
+        android:textColor="@color/color999999"
+        android:textSize="@dimen/text_XXXS" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_34dp"
+        android:background="@drawable/update_dialog_bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/mul_size_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/update_cancel"
+            android:textColor="@color/colorA5A5A5" />
+
+        <View
+            android:id="@+id/viewLine"
+            style="@style/update_dialog_line_vertical" />
+
+        <TextView
+            android:layout_width="@dimen/mul_size_zero"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/update_ok"
+            android:textColor="@color/colorF77C5F" />
+
+    </LinearLayout>
+</LinearLayout>

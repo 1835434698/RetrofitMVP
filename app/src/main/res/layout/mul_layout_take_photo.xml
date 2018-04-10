@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparent"
+    android:orientation="vertical"
+    android:padding="@dimen/mul_size_four">
+
+    <TextView
+        android:id="@+id/tvTakePhoto"
+        style="@style/mul_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mul_selector_pop_take_photo"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/takePhoto" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        style="@style/mul_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mul_size_two"
+        android:background="@drawable/mul_selector_pop_take_photo"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/mul_text_cancel" />
+</LinearLayout>

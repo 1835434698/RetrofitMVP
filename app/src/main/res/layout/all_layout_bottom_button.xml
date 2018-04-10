@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparent"
+    android:clipToPadding="false"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/all_bottomButton_margin"
+    android:paddingRight="@dimen/all_bottomButton_margin">
+
+    <Button
+        android:id="@+id/primaryBottomButton"
+        style="@style/all_style_bottom_button"
+        android:layout_width="match_parent"
+        android:text="@string/mul_bottom_button_text"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/secondaryBottomButton"
+        style="@style/all_style_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>

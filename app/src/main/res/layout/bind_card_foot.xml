@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_70dp"
+                android:background="@color/colorF9F9F9"
+                android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:background="@drawable/bind_card_foot_bg">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:drawableLeft="@drawable/bind_card_plus"
+            android:drawablePadding="@dimen/margin_14dp"
+            android:text="添加信用卡"
+            android:textColor="@color/color67ABFB"
+            android:textSize="@dimen/text_XS"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_25dp"
+            android:background="@drawable/certification_icon_blue_arrow"/>
+
+    </RelativeLayout>
+</RelativeLayout>

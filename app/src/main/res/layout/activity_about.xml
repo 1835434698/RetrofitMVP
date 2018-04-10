@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_activity_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/height_60dp"
+        android:drawablePadding="@dimen/width_8dp"
+        android:drawableTop="@drawable/all_icon"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/color494242"
+        android:textSize="@dimen/text_LL" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="@dimen/height_40dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:text="@string/version_name"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:layout_marginRight="@dimen/width_10dp"
+            android:gravity="right"
+            android:text="Android.2.2.2.161"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/width_1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:text="@string/pos_phone"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+
+        <TextView
+            android:id="@+id/tv_pos_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:layout_marginRight="@dimen/width_10dp"
+            android:gravity="right"
+            android:text="@string/pos_phone_code"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/width_1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:text="@string/vcpos_phone"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:layout_marginRight="@dimen/width_10dp"
+            android:gravity="right"
+            android:text="@string/vcpos_phone_code"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/width_1dp"
+        android:layout_height="@dimen/height_40dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:text="@string/cnepay_website"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:layout_marginRight="@dimen/width_10dp"
+            android:gravity="right"
+            android:text="@string/cnepay_website_code"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="@dimen/width_1dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:text="@string/vcpos_website"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:layout_marginRight="@dimen/width_10dp"
+            android:gravity="right"
+            android:text="@string/vcpos_website_code"
+            android:textColor="@color/color5F5F5F"
+            android:textSize="@dimen/text_XS" />
+    </LinearLayout>
+</LinearLayout>

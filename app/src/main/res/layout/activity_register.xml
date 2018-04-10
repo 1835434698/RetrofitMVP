@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listener_change_layout"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/resultact_tv_header"
+        android:textSize="@dimen/text_XXXL"
+        android:textColor="@color/text_color_dark_333333"
+        android:layout_marginTop="@dimen/width_10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_text"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:gravity="center_vertical"
+        android:layout_below="@id/resultact_tv_header"
+        android:layout_marginTop="@dimen/width_22dp"
+        android:paddingLeft="@dimen/width_19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/input_phone_edittext"/>
+
+    </RelativeLayout>
+    <include
+        layout="@layout/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_phone"/>
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_below="@id/rl_phone"
+        android:layout_marginTop="@dimen/width_10dp"
+        android:layout_marginLeft="@dimen/width_19dp"
+        style="@style/login_input_style"
+        android:hint="@string/input_code_hint"
+        android:inputType="number" />
+    <include
+        layout="@layout/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/et_code"/>
+
+    <LinearLayout
+        android:layout_below="@id/et_code"
+        android:layout_marginTop="@dimen/width_10dp"
+        android:layout_marginLeft="@dimen/width_19dp"
+        android:id="@+id/ll_password"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/input_password_edittext"/>
+    </LinearLayout>
+    <include
+        layout="@layout/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_password"
+        android:id="@+id/include" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_marginTop="@dimen/width_34dp"
+        style="@style/button_style"
+        android:text="@string/button_true"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_agreement"
+        android:layout_marginTop="@dimen/width_10dp"
+        android:layout_below="@id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_XXXS"
+            android:text="@string/register_agree_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_XXXS"
+            android:textColor="@color/color5690E6"
+            android:text="@string/register_agree"/>
+    </LinearLayout>
+
+</RelativeLayout>

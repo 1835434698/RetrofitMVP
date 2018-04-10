@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="28dp"
+    android:paddingRight="28dp">
+    <EditText
+        android:id="@+id/binddevact_dialog_et_activatecode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/shape_dialog_edittext"
+        android:gravity="center"
+        android:textColor="@color/text_color_dark_605B5B"
+        android:maxLength="@integer/et_activate_code_max_length"
+        android:digits="ABCDEF0123456789"
+        android:singleLine="true"/>
+</LinearLayout>

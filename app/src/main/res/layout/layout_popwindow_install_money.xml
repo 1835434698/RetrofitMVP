@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/width_10dp"
+    android:paddingLeft="@dimen/height_5dp"
+    android:paddingRight="@dimen/height_5dp">
+
+    <Button
+        android:id="@+id/btn_t1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:background="@drawable/shape_btn_pop_item_nor2"
+        android:gravity="center"
+        android:text="@string/install_money_pop_t1"
+        android:textColor="@color/color5F5F5F" />
+
+    <Button
+        android:id="@+id/btn_d0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:background="@drawable/shape_btn_pop_item_nor3"
+        android:gravity="center"
+        android:text="@string/install_money_pop_D0"
+        android:textColor="@color/color5F5F5F" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginTop="@dimen/width_1dp"
+        android:background="@drawable/shape_btn_pop_item_nor1"
+        android:gravity="center"
+        android:text="@string/install_money_pop_cancel"
+        android:textColor="@color/color5F5F5F" />
+</LinearLayout>

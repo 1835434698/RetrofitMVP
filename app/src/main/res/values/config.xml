@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="session_header_name">WSSESSION</string>
+    <integer name="http_connection_timeout">15000</integer>
+
+    <integer name="session_expired_time_default">3000</integer><!--默认session的生命周期，单位毫秒-->
+    <integer name="session_expired_time_login">1800000</integer><!--loginSession的生命周期，单位毫秒-->
+
+    <integer name="search_device_timeout">30000</integer>
+
+    <integer name="et_activate_code_max_length">16</integer>
+</resources>

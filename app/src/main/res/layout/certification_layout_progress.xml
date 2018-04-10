@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorF9F9F9"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/mul_size_zero"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvCertificationRealName"
+            style="@style/certification_progress_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/certification_realName" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCertificationRealName"
+            android:layout_marginBottom="@dimen/mul_size_eight">
+
+            <ImageView
+                android:id="@+id/imgCertificationRealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/certification_img_other" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mul_size_two"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/imgCertificationRealName"
+                android:background="@color/colorEBEBEB" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/mul_size_zero"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvCertificationMerchant"
+            style="@style/certification_progress_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/certification_merchant" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCertificationMerchant"
+            android:layout_marginBottom="@dimen/mul_size_eight">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mul_size_two"
+                android:layout_centerInParent="true"
+                android:background="@color/colorEBEBEB" />
+
+            <ImageView
+                android:id="@+id/imgCertificationMerchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/certification_img_other" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/mul_size_zero"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvCertificationAccount"
+            style="@style/certification_progress_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/certification_account" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCertificationAccount"
+            android:layout_marginBottom="@dimen/mul_size_eight">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mul_size_two"
+                android:layout_centerInParent="true"
+                android:background="@color/colorEBEBEB" />
+
+            <ImageView
+                android:id="@+id/imgCertificationAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/certification_img_other" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/mul_size_zero"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvConfirmAgreement"
+            style="@style/certification_progress_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_agreement" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvConfirmAgreement"
+            android:layout_marginBottom="@dimen/mul_size_eight">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mul_size_two"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/imgConfirmAgreement"
+                android:layout_toStartOf="@+id/imgConfirmAgreement"
+                android:background="@color/colorEBEBEB" />
+
+            <ImageView
+                android:id="@+id/imgConfirmAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/certification_img_other" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

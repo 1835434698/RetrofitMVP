@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cnepay.android.swiper.activity.CertificationRealNameActivity">
+
+    <include layout="@layout/certification_layout_progress" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <EditText
+        android:id="@+id/etCertificationMerchantName"
+        style="@style/certification_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/certification_icon_merchant_name"
+        android:hint="@string/certification_merchant_name" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <EditText
+        android:id="@+id/etCertificationBusinessLicense"
+        style="@style/certification_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/certification_icon_license"
+        android:hint="@string/certification_license_number" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <EditText
+        android:id="@+id/etCertificationBusinessAddress"
+        style="@style/certification_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/certification_icon_address"
+        android:hint="@string/certification_business_address" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imgCertificationBusinessLicense"
+            android:layout_width="@dimen/certification_img_width"
+            android:layout_height="@dimen/certification_img_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/certification_img_license" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imgCertificationBusinessLicense"
+            android:layout_alignRight="@+id/imgCertificationBusinessLicense"
+            android:layout_below="@+id/imgCertificationBusinessLicense"
+            android:gravity="center"
+            android:padding="@dimen/mul_size_eight"
+            android:text="@string/certification_license_photo"
+            android:textSize="@dimen/text_XS" />
+    </RelativeLayout>
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tvCertificationSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/certification_selector_button_skip"
+        android:paddingBottom="@dimen/mul_certification_button_paddingTopToBottom"
+        android:paddingLeft="@dimen/mul_certification_button_paddingLeftToRight"
+        android:paddingRight="@dimen/mul_certification_button_paddingLeftToRight"
+        android:paddingTop="@dimen/mul_certification_button_paddingTopToBottom"
+        android:text="@string/certification_skip"
+        android:textColor="@color/text_color_blue_5FB5F7"
+        android:textSize="@dimen/text_XS" />
+</LinearLayout>

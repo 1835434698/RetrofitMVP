@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.cnepay.android.swiper.activity.CertificationRealNameActivity">
+
+    <include layout="@layout/certification_layout_progress" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tvCertificationRealName"
+        style="@style/certification_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/certification_icon_person"
+        android:text="李大利" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tvCertificationIDCard"
+        style="@style/certification_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/certification_img_id_card"
+        android:text="3578558956895977858" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCertificationSettlementCard"
+            style="@style/certification_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgScan"
+            android:drawableLeft="@drawable/certification_icon_settlement_card"
+            android:hint="@string/certification_hint_settlement_card_number" />
+
+        <ImageButton
+            android:id="@+id/imgScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mul_size_eight"
+            android:background="@drawable/certification_img_scan_id_card" />
+    </RelativeLayout>
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <TextView
+        android:id="@+id/tvCertificationBankAccount"
+        style="@style/certification_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/certification_icon_bank_account"
+        android:drawableRight="@drawable/certification_icon_arrow"
+        android:hint="@string/certification_hint_bank_account" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCertificationPhoneNum"
+            style="@style/certification_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tvVCode"
+            android:drawableLeft="@drawable/certification_icon_phone"
+            android:hint="@string/phoneNum" />
+
+        <TextView
+            android:id="@+id/tvVCode"
+            style="@style/mul_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mul_size_eight"
+            android:background="@drawable/mul_selector_button_vcode"
+            android:padding="@dimen/mul_size_eight"
+            android:text="发送验证码"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_4XS" />
+    </RelativeLayout>
+
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <EditText
+        android:id="@+id/etCertificationVerificationCode"
+        style="@style/certification_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/certification_icon_verification_code"
+        android:hint="@string/certification_verificationCode" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imgCertificationBankCard"
+            android:layout_width="@dimen/certification_img_width"
+            android:layout_height="@dimen/certification_img_height"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/certification_img_bank_card" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCertificationBankCard"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/mul_size_eight"
+            android:text="@string/certification_bankCard_photo"
+            android:textSize="@dimen/text_XS" />
+    </RelativeLayout>
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+</LinearLayout>

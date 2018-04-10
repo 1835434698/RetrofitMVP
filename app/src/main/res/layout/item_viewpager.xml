@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/viewpager_imageview"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_open_world"
+        android:layout_height="35dp"
+        android:layout_width="135dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/btn_newf_next"
+        android:text="@string/feature_start"
+        android:textSize="@dimen/text_normal"
+        android:textColor="#ffffff"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>

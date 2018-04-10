@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorF9F9F9"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/width_20dp"
+        android:paddingTop="@dimen/width_10dp"
+        android:paddingLeft="@dimen/width_10dp"
+        android:paddingBottom="@dimen/width_10dp"
+        android:id="@+id/ll_password"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckedTextView
+            android:id="@+id/ctv_eye1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/width_21dp"
+            android:drawableLeft="@drawable/mul_sl_eye_checkbox"/>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_close1"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ctv_eye1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/width_6dp"
+            android:src="@drawable/ico_close"/>
+
+        <EditText
+            android:layout_toLeftOf="@id/iv_close1"
+            android:id="@+id/et_password1"
+            style="@style/login_input_style"
+            android:maxLength="20"
+            android:hint="@string/input_password_hint"
+            android:inputType="textPassword" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_marginTop="1dp"
+        android:paddingTop="@dimen/width_10dp"
+        android:paddingBottom="@dimen/width_10dp"
+        android:layout_below="@id/ll_password"
+        android:paddingLeft="@dimen/width_10dp"
+        android:id="@+id/ll_password2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/input_password_edittext"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/next"
+        android:layout_marginTop="@dimen/width_125dp"
+        android:layout_below="@id/ll_password2"
+        android:layout_centerHorizontal="true"
+        style="@style/button_style"
+        android:text="@string/button_true" />
+
+</RelativeLayout>

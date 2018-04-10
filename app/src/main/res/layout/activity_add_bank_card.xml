@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF9F9F9"
+    android:orientation="vertical"
+    tools:context="com.cnepay.android.swiper.activity.AddBankCardActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/bind_img_warning"
+        android:drawablePadding="@dimen/mul_certification_drawablePadding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/mul_size_eight"
+        android:text="@string/certification_bind_tip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/update_dialog_line_horizontal"/>
+
+        <TextView
+            android:id="@+id/add_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_22dp"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/text_XS"/>
+
+        <View style="@style/update_dialog_line_horizontal"/>
+
+        <TextView
+            android:id="@+id/add_bank_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_22dp"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/text_XS"/>
+
+        <View style="@style/update_dialog_line_horizontal"/>
+
+        <EditText
+            android:id="@+id/add_bank_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/certification_bankNum"
+            android:paddingLeft="@dimen/margin_22dp"
+            android:inputType="number"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/text_XS"/>
+
+        <View style="@style/update_dialog_line_horizontal"/>
+
+
+        <EditText
+            android:id="@+id/add_bank_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:hint="@string/bank_phone"
+            android:paddingLeft="@dimen/margin_22dp"
+            android:textColor="@color/color666666"
+            android:textSize="@dimen/text_XS"/>
+
+        <View style="@style/update_dialog_line_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp">
+
+            <Button
+                android:id="@+id/add_bank_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_29dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:background="@drawable/mul_selector_button_vcode"
+                android:text="@string/register_sendcode"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/add_bank_msg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/please_enter_code"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="@dimen/margin_22dp"
+                android:textColor="@color/color666666"
+                android:textSize="@dimen/text_XS"/>
+        </RelativeLayout>
+
+        <View style="@style/update_dialog_line_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

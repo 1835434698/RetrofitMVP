@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorF9F9F9"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginTop="@dimen/width_22dp"
+        android:paddingTop="@dimen/width_10dp"
+        android:paddingBottom="@dimen/width_10dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/login_text_account"
+            android:layout_marginRight="1dp"
+            android:text="@string/mobile"/>
+
+        <TextView
+            android:id="@+id/et_phone_number"
+            style="@style/login_input_style" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_below="@id/ll_phone"
+        android:layout_width="match_parent"
+        android:background="@color/colorF3F3F3"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_below="@id/ll_phone"
+        android:background="@android:color/white"
+        android:layout_marginTop="1dp"
+        android:paddingTop="@dimen/width_10dp"
+        android:paddingBottom="@dimen/width_10dp"
+        android:paddingLeft="@dimen/width_10dp"
+        android:id="@+id/ll_password"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/input_password_edittext"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/next"
+        style="@style/button_style"
+        android:text="@string/button_true"
+        android:layout_marginTop="@dimen/width_125dp"
+        android:layout_below="@id/ll_password"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

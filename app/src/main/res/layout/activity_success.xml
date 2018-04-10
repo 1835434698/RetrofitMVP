@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/resultact_tv_header"
+        android:layout_marginTop="@dimen/width_140dp"
+        android:drawablePadding="@dimen/width_28dp"
+        style="@style/item_centerHorizontal2"
+        android:drawableTop="@drawable/icon_success"
+        android:textSize="@dimen/text_XXXL"
+        android:textColor="@color/text_color_dark_333333"
+        android:text="@string/rst_dmst_act_titletext_register_success"/>
+    <TextView
+        android:id="@+id/resultact_tv_describe"
+        android:layout_below="@id/resultact_tv_header"
+        android:layout_marginTop="@dimen/width_14dp"
+        style="@style/item_centerHorizontal2"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="@color/text_color_dark_999999"
+        android:text="@string/rst_dmst_act_desc_register_success"/>
+    <Button
+        android:id="@+id/resultact_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/width_140dp"
+        style="@style/button_style"
+        android:layout_width="@dimen/width_150dp"
+        android:text="@string/register_success_bt" />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/read_card_act_tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/mine_activity_bg"
+        android:drawableLeft="@drawable/read_card_act_icon_notice"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="支持任何银联标记的银行卡"
+        android:textColor="@color/text_color_dark_605B5B" />
+
+    <TextView
+        android:id="@+id/read_card_act_tv_botm_content"
+        style="@style/read_card_act_style_botm_text"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="1. 支持所有带银联标记的银行卡。\n2. 刷卡时，银行卡卡面需与刷卡设备平行，磁条朝下，左手固定刷卡器，右手握卡快速刷过。\n3. 刷卡不成功时，请尝试不同刷卡速度。"
+        android:textColor="@color/text_color_dark_605B5B" />
+
+    <ImageView
+        android:id="@+id/read_card_act_iv_botm_divider"
+        style="@style/read_card_act_style_botm_text"
+        android:layout_height="1px"
+        android:layout_above="@id/read_card_act_tv_botm_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorE3E3E3" />
+
+    <TextView
+        android:id="@+id/read_card_act_tv_botm_title"
+        style="@style/read_card_act_style_botm_text"
+        android:layout_above="@id/read_card_act_iv_botm_divider"
+        android:layout_marginBottom="8dp"
+        android:text="提示"
+        android:textColor="@color/text_color_dark_332d2d"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id="@+id/read_card_act_rl_device_n_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/read_card_act_tv_botm_title"
+        android:layout_below="@id/read_card_act_tv_header">
+        <ImageView
+            android:id="@+id/read_card_act_iv_trade_card_plug"
+            style="@style/item_centerInParent"
+            android:src="@drawable/trade_card_big_plug_a_up"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/read_card_act_iv_trade_device_back"
+            style="@style/item_centerInParent"
+            android:src="@drawable/trade_device_big_v2_back" />
+        <ImageView
+            android:id="@+id/read_card_act_iv_trade_card_swipe"
+            style="@style/item_centerInParent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/trade_card_big_swipe_a_down_xsw" />
+        <ImageView
+            android:id="@+id/read_card_act_iv_trade_device_front"
+            style="@style/item_centerInParent"
+            android:src="@drawable/trade_device_big_v2_front" />
+    </RelativeLayout>
+</RelativeLayout>

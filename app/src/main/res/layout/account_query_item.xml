@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_49dp"
+                android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/query_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="0000.00.00"
+        android:textColor="@color/text_color_dark_605B5B"
+        android:textSize="@dimen/text_XS"/>
+
+    <TextView
+        android:id="@+id/query_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/query_item_date"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:textColor="@color/colorA9A8A8"
+        android:textSize="@dimen/text_4XS"/>
+
+    <TextView
+        android:id="@+id/query_item_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_color_dark_605B5B"
+        android:textSize="@dimen/text_XS"/>
+
+    <TextView
+        android:id="@+id/query_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_17dp"
+        android:textColor="@color/colorF85715"/>
+</RelativeLayout>

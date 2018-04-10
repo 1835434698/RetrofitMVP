@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout style="@style/replacedevtips_style_linearlayout_item" android:orientation="vertical"
+        android:paddingTop="10dp" android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提示："
+            android:textColor="@color/text_color_dark_332d2d"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            style="@style/replacedevtips_style_text"
+            android:layout_marginTop="8dp"
+            android:text="1、如果您的设备损坏或丢失，请通过经销商购买新设备后，使用此功能进行设备更换。设备更换后，旧设备将不能二次绑定，请谨慎操作。\n2、每个刷卡设备与手机账户唯一绑定。\n3、请勿使用已废弃的、已绑定的或非本公司的刷卡设备。\n4、如果在操作过程有任何问题，请与客服人员联系。"/>
+    </LinearLayout>
+    <RelativeLayout style="@style/replacedevtips_style_linearlayout_item" android:layout_marginTop="15dp"
+        android:paddingTop="15dp" android:paddingBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/replacedevtips_style_text"
+            android:text="当前设备号"/>
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/replacedevtips_style_text"
+            android:text="87008153221486654"
+            android:textColor="@color/text_color_dark_332d2d"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

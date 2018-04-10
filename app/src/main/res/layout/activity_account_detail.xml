@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF9F9F9"
+    tools:context="com.cnepay.android.swiper.activity.SettleDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/account_detail_shape"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_32dp"
+        android:paddingLeft="@dimen/margin_32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Merchant_id"
+                android:textColor="@color/color5c5c5c"/>
+
+            <TextView
+                android:id="@+id/detail_merchant_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80dp"
+                android:textColor="@color/color5c5c5c"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/merchant_name"
+                android:textColor="@color/color5c5c5c"/>
+
+            <TextView
+                android:id="@+id/detail_merchant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80dp"
+                android:textColor="@color/color5c5c5c"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settlement_time"
+                android:textColor="@color/color5c5c5c"/>
+
+            <TextView
+                android:id="@+id/detail_settlement_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80dp"
+                android:textColor="@color/color5c5c5c"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settlement_type"
+                android:textColor="@color/color5c5c5c"/>
+
+            <TextView
+                android:id="@+id/detail_settlement_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80dp"
+                android:textColor="@color/color5c5c5c"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_2dp"
+            android:layout_marginBottom="@dimen/margin_22dp"
+            android:layout_marginTop="@dimen/margin_22dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:background="@drawable/account_detail_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settlement_money"
+                android:textColor="@color/color5c5c5c"/>
+
+            <TextView
+                android:id="@+id/detail_account_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80dp"
+                android:textColor="@color/red_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结算账户："
+                android:textColor="@color/color5c5c5c"/>
+
+            <TextView
+                android:id="@+id/detail_card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80dp"
+                android:textColor="@color/color5c5c5c"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易金额："
+                android:textColor="@color/color5c5c5c"/>
+
+            <TextView
+                android:id="@+id/detail_transaction_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80dp"
+                android:textColor="@color/red_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状         态："
+                android:textColor="@color/color5c5c5c"/>
+
+            <TextView
+                android:id="@+id/detail_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80dp"
+                android:textColor="@color/color5c5c5c"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEDEDED"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/height_20dp">
+
+    <include layout="@layout/certification_layout_progress" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/height_10dp"
+            android:paddingRight="@dimen/height_10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:text="@string/signature_deal_title"
+                android:textColor="@color/color8F8F8F"
+                android:textSize="@dimen/text_normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_1dp"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:background="@color/login_view_line_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:text="@string/signature_deal"
+                android:textColor="@color/color282828"
+                android:textSize="@dimen/text_XS" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <CheckBox
+        android:id="@+id/signature_checkbox"
+        style="@style/login_checkbox_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/height_10dp"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:gravity="center"
+        android:text="@string/signature_deal_hint_ok" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_180dp"
+        android:layout_margin="@dimen/height_10dp"
+        android:background="@drawable/shape_signature_bg">
+
+        <TextView
+            android:id="@+id/signature_tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hint_signature"
+            android:textColor="@color/colorB0B0B0"
+            android:textSize="@dimen/text_normal" />
+
+
+        <ImageView
+            android:id="@+id/signature_iv_draw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/height_40dp" />
+    </FrameLayout>
+</LinearLayout>

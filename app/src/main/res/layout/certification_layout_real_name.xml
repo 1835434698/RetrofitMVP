@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etCertificationRealName"
+            style="@style/certification_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/relScan"
+            android:drawableLeft="@drawable/certification_icon_person"
+            android:hint="@string/certification_hint_realName"
+            android:lines="1" />
+
+        <View
+            android:id="@+id/lineHorizontal"
+            style="@style/update_dialog_line_horizontal"
+            android:layout_below="@+id/etCertificationRealName"
+            android:layout_toLeftOf="@+id/relScan" />
+
+        <EditText
+            android:id="@+id/etCertificationIDCard"
+            style="@style/certification_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineHorizontal"
+            android:digits="@string/regex_idCard_rule"
+            android:layout_toLeftOf="@+id/relScan"
+            android:drawableLeft="@drawable/certification_img_id_card"
+            android:hint="@string/certification_hint_idCard"
+            android:lines="1" />
+
+        <RelativeLayout
+            android:id="@+id/relScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etCertificationIDCard"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/etCertificationRealName"
+            android:background="@color/colorWhite">
+
+            <View
+                style="@style/update_dialog_line_vertical"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/tvScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:drawablePadding="@dimen/mul_certification_drawablePadding"
+                android:drawableTop="@drawable/certification_img_scan"
+                android:text="@string/certification_scan"
+                android:textColor="#9c9494"
+                android:textSize="@dimen/text_XXXS" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+</merge>

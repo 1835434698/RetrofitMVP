@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF9F9F9">
+
+    <TextView
+        android:id="@+id/tv_money_tip"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/height_20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/transactions_money"
+        android:textColor="@color/color5E5E5E"
+        android:textSize="@dimen/text_XXXS" />
+
+    <TextView
+        android:layout_marginTop="@dimen/width_5dp"
+        android:id="@+id/transactions_tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_money_tip"
+        android:gravity="center"
+        android:text="234,2342.32"
+        android:textColor="@color/color3F3F3F"
+        android:textSize="@dimen/text_XXXXL" />
+
+    <LinearLayout
+        android:id="@+id/bankcard_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transactions_tv_money"
+        android:layout_margin="@dimen/height_20dp"
+        android:background="@drawable/shape_bank_balance_psd_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/width_10dp"
+            android:paddingLeft="@dimen/height_20dp"
+            android:paddingTop="@dimen/width_10dp">
+
+            <ImageView
+                android:id="@+id/bank_balance_iv_icon"
+                android:layout_width="@dimen/width_40dp"
+                android:layout_height="@dimen/height_40dp"
+                android:src="@drawable/mul_img_bank_card_icon_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bank_balance_tv_bank_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="招商银行"
+                    android:textColor="@color/text_color_dark_605B5B"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/bank_balance_tv_bank_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="6222 **** **** 7956"
+                    android:textColor="@color/text_color_dark_605B5B"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/height_20dp"
+            android:text="@string/input_bankcard_psd_title"
+            android:textColor="@color/text_color_dark_332d2d"
+            android:textSize="@dimen/text_XS" />
+
+
+        <com.cnepay.android.swiper.widget.PasswordInputView
+            android:id="@+id/trader_pwd_set_pwd_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginLeft="@dimen/height_20dp"
+            android:layout_marginRight="@dimen/height_20dp"
+            android:background="@drawable/shape_bank_balance_input_psd_bg"
+            android:maxLength="6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/width_10dp"
+            android:layout_marginRight="@dimen/height_20dp"
+            android:layout_marginTop="@dimen/width_10dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/input_bankcard_psd_tip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bank_balance_btn_search"
+        style="@style/button_style"
+        android:layout_below="@+id/bankcard_ll"
+        android:enabled="false"
+        android:text="@string/input_bankcard_btn" />
+
+
+    <com.cnepay.android.swiper.widget.XNumberKeyboardView
+        android:id="@+id/view_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/height_20dp"
+        android:background="@color/colorEBEBEB"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/selector_key_background"
+        android:keyTextColor="#000000"
+        android:paddingTop="1px"
+        android:shadowColor="@android:color/transparent"
+        android:shadowRadius="0"
+        android:visibility="gone"
+        app:xnkv_deleteBackgroundColor="#d2d2d2"
+        app:xnkv_deleteDrawable="@drawable/keyboard_backspace"
+        app:xnkv_deleteWidth="22dp" />
+</RelativeLayout>

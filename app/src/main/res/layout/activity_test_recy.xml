@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cnepay.android.swiper.activity.TestRecyActivity">
+
+    <com.igeek.hfrecyleviewlib.refresh.NestedRefreshLayout
+        android:id="@+id/test_refresh_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF0"
+        app:pullMaxHeight="100dp"
+        app:pullViewHeight="60dp">
+
+        <com.igeek.hfrecyleviewlib.swipe.SwipeMenuRecyclerView
+            android:id="@+id/test_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.igeek.hfrecyleviewlib.refresh.NestedRefreshLayout>
+
+</RelativeLayout>

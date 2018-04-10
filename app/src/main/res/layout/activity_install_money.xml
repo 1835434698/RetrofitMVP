@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF1F1F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_marginTop="@dimen/height_20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/install_money_et_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:hint="@string/install_money_hint"
+            android:paddingLeft="@dimen/height_10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/width_10dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/money_hint"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+
+    <com.cnepay.android.swiper.widget.XNumberKeyboardView
+        android:id="@+id/install_money_view_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/install_btn_ok"
+        android:layout_marginTop="@dimen/height_20dp"
+        android:background="@color/colorEBEBEB"
+        android:focusable="true"
+        android:paddingTop="1px"
+        android:paddingBottom="1px"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/selector_key_background"
+        android:keyTextColor="#000000"
+        android:shadowColor="@android:color/transparent"
+        android:shadowRadius="0"
+        android:layout_marginBottom="@dimen/width_5dp"
+        app:xnkv_deleteDrawable="@drawable/keyboard_backspace"
+        app:xnkv_deleteWidth="22dp" />
+
+    <Button
+        android:id="@+id/install_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/install_money_selector_button_bottom"
+        android:enabled="false"
+        android:text="@string/button_sign_confirm"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_normal" />
+</RelativeLayout>

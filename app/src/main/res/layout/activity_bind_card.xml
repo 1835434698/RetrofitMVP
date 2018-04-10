@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorF9F9F9"
+    tools:context="com.cnepay.android.swiper.activity.BindCardActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/bind_img_warning"
+        android:drawablePadding="@dimen/mul_certification_drawablePadding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/mul_size_eight"
+        android:text="@string/certification_bind_tip"/>
+
+    <com.igeek.hfrecyleviewlib.swipe.SwipeMenuRecyclerView
+        android:id="@+id/bind_card_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorF9F9F9"/>
+
+</LinearLayout>

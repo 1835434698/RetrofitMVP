@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_account_query"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF9F9F9"
+    android:orientation="vertical"
+    tools:context="com.cnepay.android.swiper.activity.SettleQueryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:background="@color/colorE44036">
+
+        <LinearLayout
+            android:id="@+id/query_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_24dp"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:text="@string/start_time"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_XS"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_24dp"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/query_start_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/margin_18dp"
+                    android:drawableRight="@drawable/white_arrow_point_right"
+                    android:text="2016-10-29"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/query_stop_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:text="@string/stop_time"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_XS"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/query_stop_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_24dp"
+                    android:drawablePadding="@dimen/margin_18dp"
+                    android:drawableRight="@drawable/white_arrow_point_right"
+                    android:text="2016-11-14"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/query_divide"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/query_start_time"
+            android:layout_marginLeft="@dimen/padding_16dp"
+            android:layout_marginRight="@dimen/padding_16dp"
+            android:background="@color/colorE96860"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/query_divide"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/query_list_num_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_XS"/>
+
+                <TextView
+                    android:id="@+id/query_list_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="@dimen/margin_10dp"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:background="@color/colorE96860"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/query_money_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_XS"/>
+
+                <TextView
+                    android:id="@+id/query_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="@dimen/margin_10dp"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/query_radio"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30dp"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/query_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/query_select_radio_bg_left"
+            android:button="@null"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@drawable/query_selector_radio_text"
+            android:textSize="@dimen/text_XS"/>
+
+        <RadioButton
+            android:id="@+id/query_t1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/query_select_radio_bg_center"
+            android:button="@null"
+            android:gravity="center"
+            android:text="T+1"
+            android:textColor="@drawable/query_selector_radio_text"
+            android:textSize="@dimen/text_XS"/>
+
+        <RadioButton
+            android:id="@+id/query_d0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/query_select_radio_bg_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="D+0"
+            android:textColor="@drawable/query_selector_radio_text"
+            android:textSize="@dimen/text_XS"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/margin_10dp">
+
+        <com.igeek.hfrecyleviewlib.refresh.NestedRefreshLayout
+            android:id="@+id/query_refresh_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorF9F9F9"
+            android:visibility="gone"
+            app:pullMaxHeight="100dp"
+            app:pullViewHeight="60dp">
+
+            <com.igeek.hfrecyleviewlib.swipe.SwipeMenuRecyclerView
+                android:id="@+id/query_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.igeek.hfrecyleviewlib.refresh.NestedRefreshLayout>
+
+        <TextView
+            android:id="@+id/query_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorF9F9F9"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/margin_10dp"
+            android:text="@string/choose_condition_then_press_bt"
+            android:textColor="@color/colorAEAEAE"
+            android:textSize="@dimen/text_XXXS"/>
+
+        <RelativeLayout
+            android:id="@+id/query_connect_timeout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorF9F9F9"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/query_timeout_pro"
+                style="@style/ReconnectProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_80dp"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDuration="1300"/>
+
+            <ImageView
+                android:id="@+id/query_timeout_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_80dp"
+                android:background="@drawable/query_refresh"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/query_timeout_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/margin_10dp"
+                android:text="@string/request_timeout_click_request"
+                android:textColor="@color/colorAEAEAE"
+                android:textSize="@dimen/text_XXXS"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

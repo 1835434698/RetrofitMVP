@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">掌富通</string>
+    <string name="title_activity_mine">MineActivity</string>
+    <!-- MineActivity -->
+    <string name="mine_activity_identification">我的认证</string>
+
+    <string name="mine_activity_name_identify">实名认证</string>
+    <string name="mine_activity_merchant_identify">商户认证</string>
+    <string name="mine_activity_bank_identify">银行卡认证</string>
+    <string name="mine_activity_signature_identify">签名认证</string>
+
+    <string name="mine_activity_identification_success">通过</string>
+    <string name="mine_activity_identification_fail">认证失败</string>
+    <string name="mine_activity_identification_during">审核中</string>
+    <string name="mine_activity_identification_unaudited">未审核</string>
+    <string name="mine_message">我的消息</string>
+    <string name="mine_modify_password">修改密码</string>
+    <string name="mine_pos">我的设备</string>
+    <string name="mine_protocol_specification">协议说明</string>
+    <string name="mine_about">关于</string>
+    <string name="mine_fqz">常见问题</string>
+    <string name="logout">退出登录</string>
+    <string name="version_name">版本号: </string>
+    <string name="pos_phone_code">022-26283366</string>
+    <string name="pos_phone">POS服务热线:  </string>
+    <string name="vcpos_phone">VCPOS服务热线:  </string>
+    <string name="vcpos_phone_code">400-863-6660</string>
+    <string name="cnepay_website">中汇支付官网:  </string>
+    <string name="cnepay_website_code">WWW.CNEPAY.COM</string>
+    <string name="vcpos_website">掌富通官网:  </string>
+    <string name="vcpos_website_code">WWW.VCPOS.CN</string>
+    <string name="read_message">查看全文</string>
+    <string name="pack_up_message">收起全文</string>
+    <string name="mine_message_title">我的消息</string>
+
+    <string name="input_phoneNum_hint">请输入您的手机号</string>
+    <string name="input_code_hint">请输入短信验证码</string>
+    <string name="input_password_hint">请输入6-20位密码</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="logo_name">掌富通</string>
+    <string name="login_remember_account">记住账号</string>
+    <string name="button_true">确定</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="register">注册</string>
+    <string name="register_text">手机号注册</string>
+    <string name="register_sendcode">发送验证码</string>
+    <string name="rst_dmst_act_titletext_register_success">注册完成</string>
+    <string name="rst_dmst_act_titletext_update_pwd_success">修改密码完成</string>
+    <string name="rst_dmst_act_titletext_set_pwd_success">密码设置成功</string>
+    <string name="rst_dmst_act_titletext_activate_failure">激活失败</string>
+    <string name="rst_dmst_act_desc_register_success">恭喜您注册成功，开启您的财富之旅！</string>
+    <string name="rst_dmst_act_desc_fail_reason">失败原因：\n需要激活码激活的设备提示：该设备暂不能使用，请联系服务商；</string>
+    <string name="register_success_bt">立即登录</string>
+    <string name="forgot_pwd">找回密码</string>
+    <string name="mul_next_button_text">下一步</string>
+    <string name="hint_msg_vcode_resend">%1$ss后重发 </string>
+    <string name="hint_pwd_not_null">请输入密码</string>
+    <string name="hint_pwd_login">请输入6-16位密码</string>
+    <string name="text_splash">掌聚财富达者知通</string>
+    <string name="feature_start">立即进入</string>
+    <string name="feature_info1">用户中心全新设计</string>
+    <string name="feature_info2">交易查询更便捷</string>
+    <string name="feature_info3">新增变更结算卡</string>
+
+
+    <string name="hint_phone_format">请输入正确的11位手机号码</string>
+    <string name="mul_bottom_button_text">提交</string>
+    <string name="title_activity_about">关于</string>
+
+    <string name="update_cancel">暂不升级</string>
+    <string name="update_ok">立即升级</string>
+    <string name="certification_realName">实名认证</string>
+    <string name="certification_merchant">商户认证</string>
+    <string name="certification_account">账户认证</string>
+    <string name="confirm_agreement">确认协议</string>
+    <string name="certification_skip">个人用户，点击跳过</string>
+    <string name="certification_license_photo">营业执照照片</string>
+    <string name="certification_business_address">经营地址</string>
+    <string name="certification_license_number">营业执照码</string>
+    <string name="certification_merchant_name">企业名称</string>
+    <string name="certification_hint_realName">请输入真实姓名</string>
+    <string name="certification_hint_idCard">您的身份证号</string>
+    <string name="certification_id_card_this_side">身份证正面</string>
+    <string name="certification_idCard_other_side">身份证反面</string>
+    <string name="certification_hand_idCard">上传手持身份证照片</string>
+    <string name="certification_hand_idCard_sample">示例</string>
+    <string name="certification_photo_tip">请确保证件完整拍摄、无污损、无光斑</string>
+    <string name="certification_scan">扫描录入</string>
+    <string name="certification_bankCard_photo">上传银行卡正面照片</string>
+    <string name="phoneNum">手机号码</string>
+    <string name="certification_verificationCode">验证码</string>
+    <string name="certification_receive_verificationCode">请填写收到的验证码</string>
+    <string name="certification_hint_bank_account">请选择您的开户行</string>
+    <string name="certification_hint_settlement_card_number">结算卡号</string>
+    <string name="search">查询</string>
+    <string name="certification_choose_bank">请选择银行</string>
+    <string name="certification_bind_tip">绑定本人信用卡有助于提升您的交易额度</string>
+    <string name="certification_bind_credit">添加信用卡</string>
+    <string name="certification_bankNum">银行卡号</string>
+    <string name="certification_reserved_phoneNum">银行卡预留手机号</string>
+    <string name="certification_bind_bank_card_tip">请绑定认证用户本人的银行卡</string>
+    <string name="delete">删除</string>
+    <string name="replace">更换</string>
+    <string name="replace_device">更换设备</string>
+
+    <string name="hint_signature">请在此签名</string>
+    <string name="button_sign_confirm">确认</string>
+    <string name="button_sign_clean">重写</string>
+    <string name="signature_deal_title">移动支付业务服务协议</string>
+    <string name="signature_deal_hint_ok">我已阅读并同意相关服务协议</string>
+
+    <string name="signature_deal">尊敬的："\n""         "您好！您将在此与本公司签订《移动支付业务服务协议》
+        （以下简称“本协议” ），您相关的权利义务将在本协议中进行约定。
+        同时提请您注意本协议第五条、第七条关于免责条款的约定。"\n""\n"
+友好提示："\n"
+您应具有完全的民事行为能力。本公司不为无民事行为能力或限制民事行为能力人提供本服务。
+在签署本协议前，请您仔细阅读本协议条款，如您对本协议第五条、第七条涉及免除或者限制本公司责任的内容有疑议，请致电要求本公司说明。若您在进行注册程序过程中点击“同意”按钮即表示本公司已按您的要求予以说明，并表示您完全理解并接受该部分内容。
+您应当同意本协议的条款并按照页面上的提示完成全部的注册程序。您在进行注册程序过程中点击“同意”按钮即表示您与本公司就本协议达成一致，完全接受本协议项下的全部条款。
+您所需的业务办理手续、使用规则等请参见本公司的相关业务说明，该相关业务说明作为本协议的附件，与本协议具有同等法律效力。
+在支付行业多元化的发展趋势下，您自愿使用本公司提供的高效、快捷、优质的移动支付服务，由本公司为您</string>
+
+    <string name="install_money_hint">请填写收款金额</string>
+    <string name="money_hint">金额（元）</string>
+    <string name="install_money_title">设置金额</string>
+
+    <string name="install_money_pop_t1">T+1</string>
+    <string name="install_money_pop_D0">D+0及时付</string>
+    <string name="install_money_pop_cancel">取消</string>
+    <string name="hot_event">热门活动</string>
+    <string name="system_msg">消息</string>
+    <string name="bind_credit_card_tip">绑定信用卡</string>
+    <string name="bind_debit_card_tip">更换结算卡</string>
+    <string name="account_query_tip">结算查询</string>
+    <string name="transaction_query_tip">交易查询</string>
+    <string name="balance_query_tip">余额查询</string>
+    <string name="change_device_tip">更换设备</string>
+    <string name="normal_question_tip">常见问题</string>
+    <string name="home_mine_tip">我的</string>
+    <string name="account_query">结算查询</string>
+    <string name="start_time">开始日期</string>
+    <string name="stop_time">截止日期</string>
+    <string name="settle_num">结算单数量</string>
+    <string name="choose_condition_then_press_bt">请选择查询条件后，按“查询”按钮</string>
+    <string name="request_timeout_click_request">请求超时，点击重新查询</string>
+    <string name="takePhoto">拍照</string>
+    <string name="mul_text_cancel">取消</string>
+    <string name="transactions_balances">交易余额</string>
+    <string name="input_bankcard_psd_title">输入银行卡密码</string>
+    <string name="input_bankcard_psd_tip">支持任意银联储蓄卡</string>
+    <string name="input_bankcard_btn">查询余额</string>
+    <string name="bank_bankcard_title">银行卡余额</string>
+    <string name="input_bankcard_dialog_message">您的银行卡现金余额为</string>
+    <string name="transactions_money">交易金额</string>
+    <string name="transactions_title">刷卡交易</string>
+
+    <string name="pop_mine_message_item1">公告</string>
+    <string name="pop_mine_message_item2">业务通知</string>
+
+    <string name="prompt">提示</string>
+
+    <string name="confirm">换一张卡</string>
+    <string name="cancel">返回首页</string>
+    <string name="dismiss">隐藏</string>
+
+    <string name="install_dialog_title">打开蓝牙允许“掌富通”连接到设备</string>
+    <string name="install_money_confirm">好</string>
+    <string name="install_money_cancel">设置</string>
+
+    <string name="submit_title">提交成功</string>
+    <string name="submit_message">您的认证信息提交成功啦</string>
+
+    <string name="mobile">手机号</string>
+    <string name="modify_old_password">请输入当前的登录密码</string>
+    <string name="modify_new_password">请设置新的6-20位密码</string>
+    <string name="modify_new_password_again">请再一次输入</string>
+
+    <string name="wait_moment">请稍后</string>
+    <string name="pwd">%1$s.woshua</string>
+
+    <string name="hint_msg_vcode_error">短信验证码错误</string>
+    <string name="web_progressing_text">读取中，进度:%1$s</string>
+    <string name="web_alert">网页提示</string>
+    <string name="web_isLogout">确认要退出当前账户？</string>
+    <string name="web_timeout_hint">加载%s失败</string>
+
+    <string name="account_query_title">查询</string>
+    <string name="transaction_count">交易笔数</string>
+    <string name="transaction_total_money">交易总额</string>
+    <string name="transaction_query">交易查询</string>
+    <string name="Merchant_id">商户编号：</string>
+    <string name="merchant_name">商户名称：</string>
+    <string name="settlement_time">结算时间：</string>
+    <string name="settlement_type">结算类型：</string>
+    <string name="settlement_money">结算金额：</string>
+
+    <string name="register_agree_text">点击确定代表同意</string>
+    <string name="register_agree">《掌富通用户协议》</string>
+    <string name="agreement_title">掌富通服务协议</string>
+
+    <string name="regex_activate_code">^[A-F0-9]{%s}$</string>
+    <string name="bank_phone">银行卡号预留手机号</string>
+    <string name="please_enter_code">请填写收到的验证码</string>
+    <string name="input_msg_not_complete">输入信息不全</string>
+    <string name="match_fail_id">身份证号有误</string>
+    <string name="match_fail_bank_card_no">银行卡号输入不正确</string>
+    <string name="match_fail_phone_num">手机号格式输入不正确</string>
+    <string name="verify_msg_wrong">验证码输入有误</string>
+    <string name="phone_num_can_not_null">手机号不能为空</string>
+    <string name="obtain_verify_msg_hint">获取验证码</string>
+    <string name="reobtain_verify_msg_hint">重新获取</string>
+    <string name="after_60_sec_reconnect">60秒后重试</string>
+    <string name="regex_idCard_rule">0123456789xX</string>
+    <string name="register_btn_hint">获取验证码</string>
+    <string name="no_transaction_record">无交易记录</string>
+    <string name="message_timeout">请求超时，点击重新查询</string>
+    <string name="message_no_data">您还没有收到信息</string>
+
+    <string name="query_max_six_month">查询开始-结束期限最长为6个月</string>
+    <string name="settle_total_money">结算总额</string>
+    <string name="transaction_num">交易批次号:</string>
+    <string name="transaction_code">交易流水号:</string>
+    <string name="transaction_port">交易终端号:</string>
+    <string name="detail_card_num">银行卡号:</string>
+
+    <string name="login_timeout">登录超时</string>
+
+    <string name="verify_no_pass">审核未通过</string>
+    <string name="netting_time_out_check_net">网络异常，请检查网络</string>
+
+    <string name="notice_device_busy">设备忙，请稍后</string>
+
+</resources>

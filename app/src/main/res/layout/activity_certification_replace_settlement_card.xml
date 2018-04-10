@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.cnepay.android.swiper.activity.CertificationReplaceSettlementCardActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorF9F9F9"
+        android:drawableLeft="@drawable/bind_img_warning"
+        android:drawablePadding="@dimen/mul_certification_drawablePadding"
+        android:gravity="center_vertical"
+        android:padding="@dimen/mul_size_eight"
+        android:text="@string/certification_bind_bank_card_tip" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <TextView
+        style="@style/mul_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="李大力" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <TextView
+        style="@style/mul_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="15459555568965568956232626" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCardNO"
+            style="@style/mul_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgScan"
+            android:hint="结算卡号"
+            android:padding="@dimen/activity_horizontal_margin" />
+
+        <ImageButton
+            android:id="@+id/imgScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mul_size_eight"
+            android:background="@drawable/certification_img_scan_id_card" />
+    </RelativeLayout>
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <TextView
+        style="@style/mul_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/certification_icon_arrow"
+        android:hint="@string/certification_hint_bank_account"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <EditText
+            style="@style/mul_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tvVCode"
+            android:hint="@string/certification_reserved_phoneNum"
+            android:padding="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:id="@+id/tvVCode"
+            style="@style/mul_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mul_size_eight"
+            android:background="@drawable/mul_selector_button_vcode"
+            android:padding="@dimen/mul_size_eight"
+            android:text="发送验证码"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_4XS" />
+    </RelativeLayout>
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <EditText
+        style="@style/mul_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/certification_receive_verificationCode"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imgCertificationBusinessLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mul_img_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCertificationBusinessLicense"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/mul_size_eight"
+            android:text="@string/certification_bankCard_photo"
+            android:textSize="@dimen/text_XS" />
+    </RelativeLayout>
+
+    <View style="@style/update_dialog_line_horizontal" />
+</LinearLayout>

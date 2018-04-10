@@ -1,0 +1,18 @@
+<resources>
+    <string name="url_base_develop">http://192.168.1.240:29110</string> <!--开发库域名-->
+    <!--<string name="url_base_develop">http://192.168.4.133:29002</string> &lt;!&ndash;开发库域名&ndash;&gt;-->
+
+    <string name="url_base_branch"></string> <!--测试库域名-->
+    <string name="url_base_trunk"></string> <!--主干库域名-->
+    <string name="url_base_product"></string> <!--生产库域名-->
+
+    <string name="url_h5_develop">http://pos.21er.tk</string> <!--开发库H5绑定POS域名-->
+    <string name="url_h5_branch"></string> <!--测试库H5绑定POS域名-->
+    <string name="url_h5_trunk"></string> <!--主干库H5绑定POS域名-->
+    <string name="url_h5_product"></string> <!--生产库H5绑定POS域名-->
+
+    <string name="url_update_develop">http://zftdev.21er.net:15080</string><!--开发环境-->
+    <string name="url_update_branch"></string><!--测试环境-->
+    <string name="url_update_trunk"></string><!--主干环境-->
+    <string name="url_update_product"></string> <!--生产环境-->
+</resources>

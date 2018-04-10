@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvBankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tvDelete"
+        android:layout_toStartOf="@+id/tvDelete"
+        android:paddingBottom="@dimen/mul_size_eight"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:text="招商银行"
+        android:textColor="@color/color707070"
+        android:textSize="@dimen/text_LL" />
+
+    <TextView
+        android:id="@+id/tvCardInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBankName"
+        android:layout_toLeftOf="@+id/tvDelete"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/mul_size_eight"
+        android:text="李大利 **** **** **** 7527" />
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvCardInfo"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvBankName"
+        android:background="@color/colorE44036"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/delete"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
+

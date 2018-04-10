@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF9F9F9"
+    tools:context="com.cnepay.android.swiper.activity.CertificationChooseBankActivity">
+
+    <EditText
+        android:id="@+id/etBankAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mul_size_eight"
+        android:layout_toLeftOf="@+id/tvSearch"
+        android:background="@drawable/mul_shape_white_rounded_rectangle"
+        android:drawableLeft="@drawable/certification_icon_search"
+        android:drawablePadding="@dimen/mul_certification_drawablePadding"
+        android:hint="请输入开户行"
+        android:padding="@dimen/mul_certification_drawablePadding"
+        android:textSize="@dimen/text_XS" />
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/mul_size_eight"
+        android:background="@drawable/mul_img_search"
+        android:gravity="center"
+        android:text="@string/search"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_XS" />
+
+    <TextView
+        android:id="@+id/tvChooseBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/etBankAccount"
+        android:layout_below="@id/etBankAccount"
+        android:padding="@dimen/mul_size_eight"
+        android:text="@string/certification_choose_bank"
+        android:textColor="@color/color666666"
+        android:textSize="@dimen/text_XS" />
+
+    <com.igeek.hfrecyleviewlib.refresh.NestedRefreshLayout
+        android:id="@+id/refresh_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvChooseBank"
+        android:background="@color/colorWhite"
+        app:pullMaxHeight="100dp"
+        app:pullViewHeight="60dp">
+
+        <com.igeek.hfrecyleviewlib.swipe.SwipeMenuRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.igeek.hfrecyleviewlib.refresh.NestedRefreshLayout>
+
+</RelativeLayout>

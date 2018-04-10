@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/prompt_to_auth_act_style_tv"
+        android:layout_marginTop="25dp"
+        android:textSize="17sp"
+        android:textColor="@color/text_color_dark_332d2d"
+        android:text="是否进行资质认证？" />
+
+    <TextView
+        style="@style/prompt_to_auth_act_style_tv"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="68dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_dark_605B5B"
+        android:lineSpacingMultiplier="1.2"
+        android:text="　　收款是提供给通过实名、商户、账户认证同意中汇收款协议用户的业务，所以需要您通过资质认证！"/>
+
+    <include layout="@layout/all_layout_bottom_button" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_blue_5FB5F7"
+        android:text="跳过此步骤，暂不填写"/>
+
+</LinearLayout>

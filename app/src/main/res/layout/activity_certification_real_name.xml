@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cnepay.android.swiper.activity.CertificationRealNameActivity">
+
+    <include layout="@layout/certification_layout_progress" />
+
+    <include layout="@layout/certification_layout_real_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/height_20dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/mul_size_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgIdCardPositive"
+                android:layout_width="@dimen/certification_img_width"
+                android:layout_height="@dimen/certification_img_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/certification_img_id_card_this_side" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/mul_size_eight"
+                android:text="@string/certification_id_card_this_side"
+                android:textSize="@dimen/text_XS" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/mul_size_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgIdCardNegative"
+                android:layout_width="@dimen/certification_img_width"
+                android:layout_height="@dimen/certification_img_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/certification_img_id_card_other_side" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/mul_size_eight"
+                android:text="@string/certification_idCard_other_side"
+                android:textSize="@dimen/text_XS" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/height_20dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/mul_size_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgHandIdCard"
+                android:layout_width="@dimen/certification_img_width"
+                android:layout_height="@dimen/certification_img_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/certification_img_hand_id_card" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/mul_size_eight"
+                android:text="@string/certification_hand_idCard"
+                android:textSize="@dimen/text_XS" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/mul_size_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/certification_img_width"
+                android:layout_height="@dimen/certification_img_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/certification_img_hand_id_card_sample" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/mul_size_eight"
+                android:text="@string/certification_hand_idCard_sample"
+                android:textSize="@dimen/text_XS" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/update_dialog_line_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/certification_photo_tip"
+        android:textColor="#d0d0d0" />
+</LinearLayout>
